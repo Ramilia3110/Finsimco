@@ -6,7 +6,7 @@
       </video>
       <div class="container">
         <div class="img-box">
-          <img src="@/assets/hero1.svg" />
+          <img src="@/assets/hero.svg" />
         </div>
         <div class="content">
           <h1>Join the top financial analysts.</h1>
