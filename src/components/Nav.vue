@@ -5,25 +5,44 @@
         <a class="logo" href="#">Finsimco</a>
         <input type="checkbox" id="chk" v-model="checkboxValue" />
         <label for="chk" class="show-menu-btn">
-          <font-awesome-icon icon="ellipsis-v" />sss
+          <font-awesome-icon icon="ellipsis-v" />
         </label>
         <ul>
-          <router-link :to="{ path: '/', hash: '#' }" @click.native="uncheck">Home</router-link>
+          <router-link :to="{ path: '/', hash: '#' }" @click.native="uncheck"
+            >Home</router-link
+          >
 
-          <router-link :to="{ path: '/', hash: '#about' }" @click.native="uncheck">About</router-link>
-          <router-link :to="{ path: '/', hash: '#why-with-us' }" @click.native="uncheck">Why Us</router-link>
+          <router-link
+            :to="{ path: '/', hash: '#about' }"
+            @click.native="uncheck"
+            >About</router-link
+          >
+          <router-link
+            :to="{ path: '/', hash: '#why-with-us' }"
+            @click.native="uncheck"
+            >Why Us</router-link
+          >
 
           <router-link
             :to="{ path: '/', hash: '#why-with-us' }"
             @click.native="uncheck"
-          >How it works</router-link>
+            >How it works</router-link
+          >
 
-          <router-link :to="{ path: '/', hash: '#team' }" @click.native="uncheck">Team</router-link>
+          <router-link
+            :to="{ path: '/', hash: '#team' }"
+            @click.native="uncheck"
+            >Team</router-link
+          >
 
-          <router-link :to="{ path: '/', hash: '#contact' }" @click.native="uncheck">Contact</router-link>
+          <router-link
+            :to="{ path: '/', hash: '#contact' }"
+            @click.native="uncheck"
+            >Contact</router-link
+          >
 
           <label for="chk" class="hide-menu-btn">
-            <font-awesome-icon icon="times" />xxx
+            <font-awesome-icon icon="times" />
           </label>
         </ul>
       </div>
@@ -36,7 +55,7 @@ export default {
   data: () => {
     return {
       scrollPosition: null,
-      checkboxValue: false
+      checkboxValue: false,
     };
   },
   methods: {
@@ -45,12 +64,12 @@ export default {
     },
     uncheck() {
       this.checkboxValue = false;
-    }
+    },
   },
 
   mounted() {
     window.addEventListener("scroll", this.updateScroll);
-  }
+  },
 };
 </script>
 
